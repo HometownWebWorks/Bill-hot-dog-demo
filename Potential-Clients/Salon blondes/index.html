@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Blondes | Greenville, NC</title>
+  <meta name="description" content="Salon Blonde in Greenville, NC offering cuts, color, and styling services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-block">
+      <p class="brand-title">Salon Blondes</p>
+      <p class="brand-subtitle">Greenville, North Carolina</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book">Book</a>
+    </nav>
+    <div class="top-actions">
+      <a class="phone-link" href="tel:+12523213535">(252) 321-3535</a>
+      <a class="book-btn" href="#book">Book Online</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero fade-in">
+      <div class="hero-inner">
+        <p class="label">Full-Service Hair Salon</p>
+        <h1>Salon Blondes</h1>
+        <p>
+          From fresh cuts and highlights to styling for special events, Salon Blondes delivers personalized service
+          in a welcoming Greenville space.
+        </p>
+        <div class="hero-cta">
+          <a class="book-btn" href="#book">Schedule Appointment</a>
+          <a class="link-btn" href="https://m.facebook.com/salonblondenc" target="_blank" rel="noopener noreferrer">Visit Facebook</a>
+        </div>
+      </div>
+      <img src="https://s3-media0.fl.yelpcdn.com/bphoto/tM-PLXM30r8u263ZsYMb-A/o.jpg" alt="Blonde hair color service result at Salon Blondes" loading="eager" fetchpriority="high">
+    </section>
+
+    <section class="pillars fade-in">
+      <article>
+        <h2>Cut + Style</h2>
+        <p>Shape updates, trims, and finishing that match your daily routine and hair goals.</p>
+      </article>
+      <article>
+        <h2>Color Services</h2>
+        <p>Highlights, full color, and refresh appointments designed around your ideal look.</p>
+      </article>
+      <article>
+        <h2>Special Occasion Hair</h2>
+        <p>Polished styling options for events, photos, and milestone moments.</p>
+      </article>
+    </section>
+
+    <section id="services" class="menu fade-in">
+      <h2>Featured Services</h2>
+      <div class="menu-grid">
+        <article>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/tM-PLXM30r8u263ZsYMb-A/l.jpg?w=3840" alt="Ombre hairstyle by Salon Blonde stylist">
+          <h3>Highlights + Tone</h3>
+          <p>Custom lightening service with tone refinement and a polished finish.</p>
+        </article>
+        <article>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/sf83Dn5Hg9FI62bBWg7EAA/l.jpg?w=3840" alt="Haircut and style result from Salon Blonde">
+          <h3>Cut + Blowout</h3>
+          <p>Precision shaping with movement-focused styling for everyday wear.</p>
+        </article>
+        <article>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/mGcqLRgbRqFkvXDRS4Vsaw/l.jpg?w=3840" alt="Eyelash extension and beauty service at Salon Blonde">
+          <h3>Event Styling</h3>
+          <p>Camera-ready styling options for weddings, celebrations, and formal events.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery fade-in">
+      <h2>Inside Salon Blondes</h2>
+      <div class="gallery-grid">
+        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/d2wBumqjgib_lxqzJfjwcA/l.jpg?w=3840" alt="Salon Blonde client work collage">
+        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/lPh9GRKcl4QqO4XgLBz1nQ/l.jpg?w=3840" alt="Blonde highlight transformation at Salon Blonde">
+        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/tM-PLXM30r8u263ZsYMb-A/l.jpg?w=3840" alt="Ombre styling at Salon Blonde">
+      </div>
+    </section>
+
+    <section id="book" class="booking fade-in">
+      <div class="booking-head">
+        <h2>Book Online Appointment</h2>
+        <p>Send your request below and our team will confirm your time.</p>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <label>
+          Full Name
+          <input type="text" name="fullName" autocomplete="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          Phone Number
+          <input type="tel" name="phone" autocomplete="tel" required>
+        </label>
+        <label>
+          Service
+          <select name="service" required>
+            <option value="">Select a service</option>
+            <option>Cut + Blowout</option>
+            <option>Highlights + Tone</option>
+            <option>Full Color</option>
+            <option>Event Styling</option>
+          </select>
+        </label>
+        <label>
+          Preferred Date
+          <input type="date" name="date" id="apptDate" required>
+        </label>
+        <label>
+          Preferred Time
+          <input type="time" name="time" required>
+        </label>
+        <label class="wide">
+          Notes
+          <textarea name="notes" rows="4" placeholder="Tell us your hair goals or preferred stylist."></textarea>
+        </label>
+        <button type="submit" class="submit-btn">Request Appointment</button>
+      </form>
+      <p class="booking-note" id="bookingMessage" aria-live="polite"></p>
+      <p class="booking-alt">
+        Prefer social booking? <a href="https://m.facebook.com/salonblondenc" target="_blank" rel="noopener noreferrer">Book via Facebook</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Salon Blondes, 638 E Arlington Blvd #C, Greenville, NC 27858 &bull; (252) 321-3535 &bull; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
