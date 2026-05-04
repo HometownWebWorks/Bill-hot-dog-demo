@@ -25,9 +25,9 @@ body {
   font-family: "Source Sans 3", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(217, 163, 32, 0.26), transparent 28%),
-    radial-gradient(circle at top right, rgba(182, 59, 31, 0.14), transparent 24%),
-    linear-gradient(180deg, #f8ecd7 0%, #f1dcc0 52%, var(--bg) 100%);
+    radial-gradient(circle at 8% 4%, rgba(217, 163, 32, 0.25), transparent 30%),
+    radial-gradient(circle at 88% 10%, rgba(182, 59, 31, 0.16), transparent 24%),
+    linear-gradient(180deg, #faefd9 0%, #f3dfc1 48%, var(--bg) 100%);
 }
 
 a {
@@ -55,11 +55,11 @@ a {
   z-index: 10;
   margin-top: 0.75rem;
   padding-inline: 1.25rem;
-  background: rgba(255, 247, 234, 0.88);
-  border: 1px solid rgba(212, 177, 131, 0.88);
-  border-radius: 999px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 24px rgba(92, 52, 24, 0.1);
+  background: rgba(255, 247, 234, 0.82);
+  border-bottom: 2px solid rgba(182, 59, 31, 0.24);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(92, 52, 24, 0.08);
 }
 
 .brand-kicker,
@@ -118,8 +118,8 @@ h3 {
   display: grid;
   grid-template-columns: 1.5fr 0.9fr;
   gap: 1.5rem;
-  align-items: stretch;
-  padding: 3.5rem 0 2rem;
+  align-items: start;
+  padding: 4rem 0 2.4rem;
 }
 
 .hero-copy,
@@ -137,10 +137,11 @@ h3 {
 }
 
 .hero-copy {
-  padding: 2.8rem;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.52), transparent 55%),
-    linear-gradient(180deg, rgba(246, 228, 193, 0.9), rgba(255, 247, 234, 0.98));
+  padding: 0.8rem 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 h1 {
@@ -209,6 +210,7 @@ h1 {
     linear-gradient(180deg, rgba(182, 59, 31, 0.96), rgba(143, 39, 21, 0.98)),
     var(--accent);
   color: #fff7ef;
+  transform: rotate(-1deg);
 }
 
 .hero-card ul {
@@ -221,13 +223,16 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2.2rem;
 }
 
 .info-strip article {
   padding: 1.25rem 1.4rem;
-  background:
-    linear-gradient(180deg, rgba(255, 251, 244, 0.96), rgba(247, 233, 205, 0.98));
+  background: rgba(255, 249, 238, 0.82);
+  border: 0;
+  box-shadow: none;
+  border-radius: 12px;
+  border-left: 4px solid rgba(182, 59, 31, 0.5);
 }
 
 .info-map-card {
@@ -247,7 +252,18 @@ h1 {
 }
 
 .section {
-  padding: 2.4rem 0;
+  padding: 2.9rem 0;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(182, 59, 31, 0.3), transparent);
 }
 
 .section-heading {
@@ -277,6 +293,8 @@ h2 {
 .gallery-card {
   overflow: hidden;
   background: #fffaf2;
+  border-radius: 12px;
+  box-shadow: 0 14px 28px rgba(92, 52, 24, 0.14);
 }
 
 .gallery-card img {
@@ -309,8 +327,11 @@ h2 {
 
 .menu-card {
   padding: 1.5rem;
-  background:
-    linear-gradient(180deg, rgba(255, 248, 236, 0.98), rgba(248, 234, 210, 0.98));
+  background: rgba(255, 252, 245, 0.72);
+  border: 0;
+  border-top: 3px solid rgba(217, 163, 32, 0.75);
+  box-shadow: none;
+  border-radius: 10px;
 }
 
 .menu-card ul {
@@ -342,8 +363,10 @@ h2 {
 .location-card,
 .contact-panel {
   padding: 1.6rem;
-  background:
-    linear-gradient(180deg, rgba(255, 248, 237, 0.98), rgba(249, 235, 212, 0.98));
+  background: rgba(255, 248, 237, 0.72);
+  border: 0;
+  border-radius: 12px;
+  box-shadow: none;
 }
 
 .text-link {
@@ -366,6 +389,8 @@ h2 {
   color: var(--accent-dark);
   text-align: center;
   padding: 1.5rem;
+  border: 0;
+  box-shadow: none;
 }
 
 .site-footer {
@@ -375,6 +400,7 @@ h2 {
   padding: 2rem 0 3rem;
   color: var(--muted);
   font-size: 0.95rem;
+  border-top: 1px solid rgba(44, 27, 18, 0.14);
 }
 
 .reveal {
@@ -438,7 +464,7 @@ h2 {
   }
 
   .site-header {
-    border-radius: 24px;
+    border-radius: 12px;
   }
 
   h1 {
